@@ -15,9 +15,11 @@ Although these themes are aimed specifically as Mint 19 Cinnamon users, Mint 19 
 
 Open a terminal (ctrl t) and enter the following commands
 
-`wget https://github.com/smurphos/Window_Borders_Mint_19/releases/download/v0.1/metacity_for_mint19_cinn.zip`
-`unzip metacity_for_mint19_cinn.zip -d ~/.themes`
-`rm metacity_for_mint19_cinn.zip`
+* `wget https://github.com/smurphos/Window_Borders_Mint_19/releases/download/v0.1/metacity_for_mint19_cinn.zip`
+
+* `unzip metacity_for_mint19_cinn.zip -d ~/.themes`
+
+* `rm metacity_for_mint19_cinn.zip`
 
 Open the Themes app and the new Window Border's themes should be available for selection.
 
