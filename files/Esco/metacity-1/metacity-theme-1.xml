@@ -703,6 +703,13 @@
 	</gradient>
 </draw_ops>
 
+<draw_ops name="gradient_background_unfocused">
+	<gradient type="vertical" x="0" y="0" width="width" height="top_height">
+		<color value="gtk:light[NORMAL]"/>
+		<color value="gtk:dark[NORMAL]"/>
+	</gradient>
+</draw_ops>
+
 <draw_ops name="outer_bevel_focused">
 	<gtk_box state="selected" shadow="out" x="2" y="2" width="width - 2"
 		height="height - 2"/>
@@ -900,7 +907,7 @@
 
 <frame_style name="maximized_unfocused" geometry="normal_small_borders"
 	parent="normal_unfocused">
-	<piece position="entire_background" draw_ops="blank"/>
+	<piece position="entire_background" draw_ops="gradient_background_unfocused"/>
 
 	<piece position="title" draw_ops="title_maximized"/>
 

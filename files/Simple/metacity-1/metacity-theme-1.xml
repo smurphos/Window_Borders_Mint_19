@@ -179,6 +179,15 @@
              height="height-top_height-bottom_height+1"/>
 </draw_ops>
 
+<draw_ops name="maximised_fill">
+   <rectangle color="gtk:bg[NORMAL]"
+            x="0" y="0"
+            width="width"
+            height="height"
+            filled="true"/>
+   <include name="focus_outline"/>
+</draw_ops>
+
 <draw_ops name="focus_background">
   <include name="outer_bevel"/>
 </draw_ops>
@@ -272,13 +281,13 @@
 </frame_style>
 
 <frame_style name="maximized_unfocused" geometry="normal_small_borders" parent="normal_unfocused">
-  <piece position="entire_background" draw_ops="blank"/>
+  <piece position="entire_background" draw_ops="maximised_fill"/>
   <button function="maximize" state="normal" draw_ops="restore_button"/>
   <button function="maximize" state="pressed" draw_ops="restore_button_pressed"/>
 </frame_style>
 
 <frame_style name="maximized_focused" geometry="normal_small_borders" parent="normal_focused">
-  <piece position="entire_background" draw_ops="focus_outline"/>
+  <piece position="entire_background" draw_ops="maximised_fill"/>
   <button function="maximize" state="normal" draw_ops="restore_button"/>
   <button function="maximize" state="pressed" draw_ops="restore_button_pressed"/>
 </frame_style>

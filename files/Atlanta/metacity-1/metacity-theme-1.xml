@@ -147,8 +147,10 @@
 </draw_ops>
 
 <draw_ops name="outer_bevel">
+  <rectangle color="gtk:bg[NORMAL]"
+            x="1" y="1" width="width-2" height="height-2" filled="true"/>
   <rectangle color="gtk:fg[NORMAL]"
-             x="0" y="0" width="width-1" height="height-1"/>
+            x="0" y="0" width="width-1" height="height-1"/>
   <line color="gtk:light[NORMAL]"
         x1="1" y1="1" x2="1" y2="height-2"/>
   <line color="gtk:light[NORMAL]"
@@ -168,6 +170,15 @@
              x="left_width-1" y="top_height-1"
              width="width-left_width-right_width+1"
              height="height-top_height-bottom_height+1"/>
+</draw_ops>
+
+<draw_ops name="maximised_fill">
+  <rectangle color="gtk:bg[NORMAL]"
+              x="0" y="0"
+             width="width"
+             height="height"
+             filled="true"/>
+  <include name="focus_outline"/>
 </draw_ops>
 
 <draw_ops name="focus_background">
@@ -277,13 +288,13 @@
 </frame_style>
 
 <frame_style name="maximized_unfocused" geometry="normal_small_borders" parent="normal_unfocused">
-  <piece position="entire_background" draw_ops="blank"/>
+  <piece position="entire_background" draw_ops="maximised_fill"/>
   <button function="maximize" state="normal" draw_ops="restore_button"/>
   <button function="maximize" state="pressed" draw_ops="restore_button_pressed"/>
 </frame_style>
 
 <frame_style name="maximized_focused" geometry="normal_small_borders" parent="normal_focused">
-  <piece position="entire_background" draw_ops="focus_outline"/>
+  <piece position="entire_background" draw_ops="maximised_fill"/>
   <button function="maximize" state="normal" draw_ops="restore_button"/>
   <button function="maximize" state="pressed" draw_ops="restore_button_pressed"/>
 </frame_style>
