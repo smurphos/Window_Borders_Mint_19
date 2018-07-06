@@ -9,7 +9,7 @@ Never fear this repository contains the full set of 'missing' Window Border them
 
 Please be aware my testing of these modified themes has been fairly limited. Feedback with screenshots of any issues is very welcome.
 
-Although these themes are aimed specifically as Mint 19 Cinnamon users, Mint 19 Mate users who wish to have a little more variety of window borders may also appreciate them.
+Although these themes are aimed specifically at Mint 19 Cinnamon users, Mint 19 Mate users who wish to have a little more variety of window borders may also appreciate them.
 
 ## Installation
 
