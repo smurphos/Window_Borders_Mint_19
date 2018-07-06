@@ -15,7 +15,7 @@ Although these themes are aimed specifically at Mint 19 Cinnamon users, Mint 19 
 
 Open a terminal (ctrl t) and enter the following commands
 
-* `wget https://github.com/smurphos/Window_Borders_Mint_19/releases/download/v0.2/metacity_for_mint19_cinn.zip`
+* `wget https://github.com/smurphos/Window_Borders_Mint_19/releases/download/v.0.2/metacity_for_mint19_cinn.zip`
 
 * `unzip metacity_for_mint19_cinn.zip -d ~/.themes`
 
