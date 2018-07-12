@@ -5,17 +5,16 @@ Additional Metacity Themes from Mint 18.3 Cinnamon Edition tweaked to work in Mi
 
 Just installed or upgraded to Mint 19 Cinnamon and wondering where all the Window Border theming options have gone? Missing your Ageing Gorilla, Crux, Esco etc...?
 
-Never fear this repository contains the full set of 'missing' Window Border themes. Where necessary they have been modified to include a `metacity-theme-3.xml` file to display correctly in the Cinnamon 3.8.x Themes module, and obvious display issues have been fixed.
+Never fear this repository contains the full set of 'missing' Window Border themes. Where necessary they have been updated to `metacity-theme-3.xml` formats to display correctly in the Cinnamon 3.8.x Themes module. Display issues have been fixed and compatibility for displaying colours from GTK3.22 themes has been improved.
 
 Please be aware my testing of these modified themes has been fairly limited. Feedback with screenshots of any issues is very welcome.
 
-Although these themes are aimed specifically at Mint 19 Cinnamon users, Mint 19 Mate users who wish to have a little more variety of window borders may also appreciate them.
 
 ## Installation
 
 Open a terminal (ctrl t) and enter the following commands
 
-* `wget https://github.com/smurphos/Window_Borders_Mint_19/releases/download/v.0.2/metacity_for_mint19_cinn.zip`
+* `wget https://github.com/smurphos/Window_Borders_Mint_19/releases/download/v.0.3/metacity_for_mint19_cinn.zip`
 
 * `unzip metacity_for_mint19_cinn.zip -d ~/.themes`
 
@@ -24,4 +23,10 @@ Open a terminal (ctrl t) and enter the following commands
 Open the Themes app and the new Window Border's themes should be available for selection.
 
 
+## Changelog
 
+5/7/18 - v.1 - Initial port of version 1 and 2 themes to version 3 - release
+
+6/7/18 - v.2 - Fixed version 1 and 2 themes to support Mate
+
+12/7/18 -v.3 - Removed all version 1 and 2 themes. Improvements to version 3 themes to improve compatibility for displaying colours from active GTK3.22 theme.
