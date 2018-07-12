@@ -8,6 +8,18 @@
   <description>Default GNOME window theme</description>
 </info>
 
+<!-- Colour Constants  -->
+<constant name="C_fg_normal" value="gtk:custom(theme_fg_color,gtk:bg[NORMAL])" />
+<constant name="C_bg_normal" value="gtk:custom(theme_bg_color,gtk:bg[NORMAL])" />
+
+<constant name="C_fg_selected" value="gtk:custom(theme_selected_fg_color,gtk:fg[SELECTED])" />
+<constant name="C_bg_selected" value="gtk:custom(theme_selected_bg_color,gtk:bg[SELECTED])" />
+
+<constant name="C_bg_light" value="shade/gtk:custom(theme_bg_color,gtk:bg[NORMAL])/1.25" />
+<constant name="C_bg_dark" value="shade/gtk:custom(theme_bg_color,gtk:bg[NORMAL])/0.75" />
+
+<constant name="C_button_fill" value="blend/#000000/gtk:custom(theme_bg_color,gtk:bg[NORMAL])/0.9" />
+
 <frame_geometry name="normal">
   <distance name="left_width" value="4"/>
   <distance name="right_width" value="4"/>
@@ -68,11 +80,11 @@
 <!-- Buttons -->
 
 <draw_ops name="button_pressed_bg">
-  <rectangle color="gtk:light[NORMAL]" filled="true"
+  <rectangle color="C_bg_light" filled="true"
              x="1" y="1" width="width" height="height"/>
-  <rectangle color="gtk:dark[NORMAL]" filled="true"
+  <rectangle color="C_bg_dark" filled="true"
              x="0" y="0" width="width - 1" height="height - 1"/>
-  <rectangle color="blend/#000000/gtk:bg[NORMAL]/0.9" filled="true"
+  <rectangle color="C_button_fill" filled="true"
              x="1" y="1" width="width - 2" height="height - 2"/>
   <!-- gtk_box state="active" shadow="out" x="0" y="0" width="width" height="height"/ -->
 </draw_ops>
@@ -88,7 +100,7 @@
 </draw_ops>
 
 <draw_ops name="minimize_button">
-  <line color="gtk:fg[NORMAL]"
+  <line color="C_fg_normal"
         x1="ButtonIPad"
         y1="height - ButtonIPad - ThickLineWidth + 3"
         x2="width"
@@ -102,11 +114,11 @@
 </draw_ops>
 
 <draw_ops name="maximize_button">
-  <rectangle color="gtk:fg[NORMAL]" filled="false"
-             x="ButtonIPad" y="ButtonIPad" width="width-ButtonIPad*2 + 2" 
+  <rectangle color="C_fg_normal" filled="false"
+             x="ButtonIPad" y="ButtonIPad" width="width-ButtonIPad*2 + 2"
              height="height-ButtonIPad*2 + 1"/>
-  <line color="gtk:fg[NORMAL]" width="2"
-        x1="ButtonIPad" y1="ButtonIPad+1" x2="width-ButtonIPad + 2" 
+  <line color="C_fg_normal" width="2"
+        x1="ButtonIPad" y1="ButtonIPad+1" x2="width-ButtonIPad + 2"
         y2="ButtonIPad+2"/>
 </draw_ops>
 
@@ -116,11 +128,11 @@
 </draw_ops>
 
 <draw_ops name="mini_window_icon">
-  <rectangle color="gtk:bg[NORMAL]" filled="true"
+  <rectangle color="C_bg_normal" filled="true"
              x="0" y="0" width="width-1" height="height-1"/>
-  <rectangle color="gtk:fg[NORMAL]" filled="false"
+  <rectangle color="C_fg_normal" filled="false"
              x="0" y="0" width="width-1" height="height-1"/>
-  <line color="gtk:fg[NORMAL]" width="2" x1="0" y1="1" x2="width" y2="1"/>
+  <line color="C_fg_normal" width="2" x1="0" y1="1" x2="width" y2="1"/>
 </draw_ops>
 
 <draw_ops name="restore_button">
@@ -140,10 +152,10 @@
 </draw_ops>
 
 <draw_ops name="close_button">
-  <line color="gtk:fg[NORMAL]"
+  <line color="C_fg_normal"
         x1="ButtonIPad" y1="ButtonIPad"
         x2="width - ButtonIPad + 1" y2="height - ButtonIPad + 1" width="3"/>
-  <line color="gtk:fg[NORMAL]"
+  <line color="C_fg_normal"
         x1="ButtonIPad - 1" y1="height - ButtonIPad"
         x2="width - ButtonIPad + 1" y2="ButtonIPad" width="3"/>
 </draw_ops>
@@ -154,18 +166,18 @@
 </draw_ops>
 
 <draw_ops name="outer_bevel">
-  <rectangle color="gtk:fg[NORMAL]"
+  <rectangle color="C_fg_normal"
              x="0" y="0" width="width" height="height" filled="true"/>
-  <rectangle color="gtk:bg[NORMAL]"
+  <rectangle color="C_bg_normal"
              x="1" y="1" width="width-2" height="height-2" filled="true"/>
-  <line color="gtk:light[NORMAL]"
+  <line color="C_bg_light"
         x1="1" y1="1" x2="1" y2="height-3"/>
-  <line color="gtk:light[NORMAL]"
+  <line color="C_bg_light"
         x1="1" y1="1" x2="width-3" y2="1"/>
-  <line color="gtk:dark[NORMAL]"
+  <line color="C_bg_dark"
         x1="width-2" y1="2" x2="width-2" y2="height-2"/>
-  <line color="gtk:dark[NORMAL]"
-        x1="2" y1="height-2" x2="width-3" y2="height-2"/>        
+  <line color="C_bg_dark"
+        x1="2" y1="height-2" x2="width-3" y2="height-2"/>
 </draw_ops>
 
 <draw_ops name="blank">
@@ -173,14 +185,14 @@
 </draw_ops>
 
 <draw_ops name="focus_outline">
-  <rectangle color="gtk:dark[NORMAL]"
+  <rectangle color="C_bg_dark"
              x="left_width-1" y="top_height-1"
              width="width-left_width-right_width+1"
              height="height-top_height-bottom_height+1"/>
 </draw_ops>
 
 <draw_ops name="maximised_fill">
-   <rectangle color="gtk:bg[NORMAL]"
+   <rectangle color="C_bg_normal"
             x="0" y="0"
             width="width"
             height="height"
@@ -193,46 +205,46 @@
 </draw_ops>
 
 <draw_ops name="title_tile">
-  <line color="gtk:bg[SELECTED]" x1="0" y1="0" x2="width" y2="0"/>
-  <line color="blend/gtk:bg[SELECTED]/#000000/0.1" x1="0" y1="1" x2="width" y2="1"/>
+  <line color="C_bg_selected" x1="0" y1="0" x2="width" y2="0"/>
+  <line color="blend/gtk:custom(theme_selected_bg_color,gtk:bg[SELECTED])/#000000/0.1" x1="0" y1="1" x2="width" y2="1"/>
 </draw_ops>
 
 <draw_ops name="title_tile_unfocused">
-  <line color="blend/gtk:bg[NORMAL]/#000000/0.1" x1="0" y1="0" x2="width" y2="0"/>
-  <line color="blend/gtk:bg[NORMAL]/#ffffff/0.2" x1="0" y1="1" x2="width" y2="1"/>
+  <line color="blend/gtk:custom(theme_bg_color,gtk:bg[NORMAL])/#000000/0.1" x1="0" y1="0" x2="width" y2="0"/>
+  <line color="blend/gtk:custom(theme_bg_color,gtk:bg[NORMAL])/#ffffff/0.2" x1="0" y1="1" x2="width" y2="1"/>
 </draw_ops>
 
 <draw_ops name="title_bg">
   <tile name="title_tile" tile_width="width" tile_height="2" x="0" y="0" width="width" height="height"/>
   <rectangle color="blend/gtk:bg[SELECTED]/#000000/0.6" filled="false" x="0" y="0" width="width-1" height="height-1"/>
-  <rectangle color="blend/#000000/gtk:bg[NORMAL]/0.5" filled="true" x="0" y="0" width="1" height="1"/>
-  <rectangle color="blend/#000000/gtk:bg[NORMAL]/0.5" filled="true" x="width-1" y="0" width="1" height="1"/>
-  <rectangle color="blend/#000000/gtk:bg[NORMAL]/0.5" filled="true" x="0" y="height-1" width="1" height="1"/>
-  <rectangle color="blend/#000000/gtk:bg[NORMAL]/0.5" filled="true" x="width-1" y="height-1" width="1" height="1"/>
+  <rectangle color="blend/#000000/gtk:custom(theme_bg_color,gtk:bg[NORMAL])/0.5" filled="true" x="0" y="0" width="1" height="1"/>
+  <rectangle color="blend/#000000/gtk:custom(theme_bg_color,gtk:bg[NORMAL])/0.5" filled="true" x="width-1" y="0" width="1" height="1"/>
+  <rectangle color="blend/#000000/gtk:custom(theme_bg_color,gtk:bg[NORMAL])/0.5" filled="true" x="0" y="height-1" width="1" height="1"/>
+  <rectangle color="blend/#000000/gtk:custom(theme_bg_color,gtk:bg[NORMAL])/0.5" filled="true" x="width-1" y="height-1" width="1" height="1"/>
 </draw_ops>
 
 <draw_ops name="title_bg_unfocused">
   <tile name="title_tile_unfocused" tile_width="width" tile_height="2" x="0" y="0" width="width-1" height="height-1"/>
   <rectangle color="blend/#000000/gtk:fg[NORMAL]/0.7" filled="false" x="0" y="0" width="width-1" height="height-1"/>
-  <rectangle color="blend/#000000/gtk:bg[NORMAL]/0.8" filled="true" x="0" y="0" width="1" height="1"/>
-  <rectangle color="blend/#000000/gtk:bg[NORMAL]/0.8" filled="true" x="width-1" y="0" width="1" height="1"/>
-  <rectangle color="blend/#000000/gtk:bg[NORMAL]/0.8" filled="true" x="0" y="height-1" width="1" height="1"/>
-  <rectangle color="blend/#000000/gtk:bg[NORMAL]/0.8" filled="true" x="width-1" y="height-1" width="1" height="1"/>
+  <rectangle color="blend/#000000/gtk:custom(theme_bg_color,gtk:bg[NORMAL])/0.8" filled="true" x="0" y="0" width="1" height="1"/>
+  <rectangle color="blend/#000000/gtk:custom(theme_bg_color,gtk:bg[NORMAL])/0.8" filled="true" x="width-1" y="0" width="1" height="1"/>
+  <rectangle color="blend/#000000/gtk:custom(theme_bg_color,gtk:bg[NORMAL])/0.8" filled="true" x="0" y="height-1" width="1" height="1"/>
+  <rectangle color="blend/#000000/gtk:custom(theme_bg_color,gtk:bg[NORMAL])/0.8" filled="true" x="width-1" y="height-1" width="1" height="1"/>
 </draw_ops>
 
 <draw_ops name="title_text_focused">
   <clip x="0" y="0" width="width-SpacerWidth" height="height"/>
-  <title color="blend/gtk:fg[SELECTED]/#000000/0.7"
+  <title color="blend/gtk:custom(theme_selected_fg_color,gtk:fg[SELECTED])/#000000/0.7"
          x="(0 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2 + mini_icon_width + IconTitleSpacing + 1"
          y="((height - title_height) / 2) `max` 0 + 1"/>
-  <title color="gtk:fg[SELECTED]"
+  <title color="C_fg_selected"
          x="(0 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2 + mini_icon_width + IconTitleSpacing"
          y="((height - title_height) / 2) `max` 0"/>
 </draw_ops>
 
 <draw_ops name="title_text">
   <clip x="0" y="0" width="width-SpacerWidth" height="height"/>
-  <title color="gtk:fg[NORMAL]"
+  <title color="C_fg_normal"
          x="(0 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2 + mini_icon_width + IconTitleSpacing"
          y="((height - title_height) / 2) `max` 0"/>
 </draw_ops>

@@ -8,6 +8,10 @@
   <description>A port of the Gorilla theme by Jacub Steiner</description>
 </info>
 
+<!-- Colour Constants  -->
+<constant name="C_bg_insensitive" value="blend/gtk:custom(theme_fg_color,gtk:fg[NORMAL])/gtk:custom(theme_bg_color,gtk:bg[NORMAL])/0.25" />
+<constant name="C_bg_normal" value="gtk:custom(theme_bg_color,gtk:bg[NORMAL])" />
+
 <!-- define constants -->
 <constant name="IconTitleSpacing" value="2"/> <!-- Space between menu button and title -->
 <constant name="ButtonWidth" value="18"/> <!-- Button width -->
@@ -53,12 +57,12 @@
       <rectangle color="light gray" x="4" y="4" width="width - 9" height="height - 8" filled="false"/>
       <rectangle color="light gray" x="5" y="5" width="width - 11" height="height - 10" filled="false"/>
       <rectangle color="white" x="6" y="6" width="width - 13" height="height - 12" filled="false"/>
-      <rectangle color="gtk:bg[INSENSITIVE]" x="6" y="6" width="width - 12" height="height - 12" filled="true"/>
+      <rectangle color="C_bg_insensitive" x="6" y="6" width="width - 12" height="height - 12" filled="true"/>
 
-      <line color="gtk:bg[INSENSITIVE]" x1="1" y1="1" x2="2" y2="2"/>
-      <line color="gtk:bg[INSENSITIVE]" x1="1" y1="height - 2" x2="1" y2="height"/>
-      <line color="gtk:bg[INSENSITIVE]" x1="width - 2" y1="1" x2="width - 1" y2="2"/>
-      <line color="gtk:bg[INSENSITIVE]" x1="width - 1" y1="height - 1" x2="width - 2" y2="height - 2"/>
+      <line color="C_bg_insensitive" x1="1" y1="1" x2="2" y2="2"/>
+      <line color="C_bg_insensitive" x1="1" y1="height - 2" x2="1" y2="height"/>
+      <line color="C_bg_insensitive" x1="width - 2" y1="1" x2="width - 1" y2="2"/>
+      <line color="C_bg_insensitive" x1="width - 1" y1="height - 1" x2="width - 2" y2="height - 2"/>
    </draw_ops>
   </piece>
 
@@ -153,12 +157,12 @@
       <rectangle color="light gray" x="4" y="4" width="width - 9" height="height - 8" filled="false"/>
       <rectangle color="light gray" x="5" y="5" width="width - 11" height="height - 10" filled="false"/>
       <rectangle color="white" x="6" y="6" width="width - 13" height="height - 12" filled="false"/>
-      <rectangle color="gtk:bg[NORMAL]" x="6" y="6" width="width - 12" height="height - 12" filled="true"/>
+      <rectangle color="C_bg_normal" x="6" y="6" width="width - 12" height="height - 12" filled="true"/>
 
-      <line color="gtk:bg[NORMAL]" x1="0" y1="0" x2="1" y2="1"/>
-      <line color="gtk:bg[NORMAL]" x1="0" y1="height - 1" x2="1" y2="height"/>
-      <line color="gtk:bg[NORMAL]" x1="width - 1" y1="0" x2="width" y2="1"/>
-      <line color="gtk:bg[NORMAL]" x1="width" y1="height" x2="width - 1" y2="height - 1"/>
+      <line color="C_bg_normal" x1="0" y1="0" x2="1" y2="1"/>
+      <line color="C_bg_normal" x1="0" y1="height - 1" x2="1" y2="height"/>
+      <line color="C_bg_normal" x1="width - 1" y1="0" x2="width" y2="1"/>
+      <line color="C_bg_normal" x1="width" y1="height" x2="width - 1" y2="height - 1"/>
    </draw_ops>
   </piece>
 
@@ -269,7 +273,7 @@
 
 <menu_icon function="maximize" state="normal">
   <draw_ops>
-    <image filename="active-maximize-menu-icon.png" 
+    <image filename="active-maximize-menu-icon.png"
            x="(width - object_width) / 2"
            y="(height - object_height) / 2"
            width="object_width" height="object_height"/>
@@ -279,7 +283,7 @@
 
 <menu_icon function="close" state="normal">
   <draw_ops>
-    <image filename="active-close-menu-icon.png" 
+    <image filename="active-close-menu-icon.png"
            x="(width - object_width) / 2"
            y="(height - object_height) / 2"
            width="object_width" height="object_height"/>
@@ -288,7 +292,7 @@
 
 <menu_icon function="minimize" state="normal">
   <draw_ops>
-    <image filename="active-minimize-menu-icon.png" 
+    <image filename="active-minimize-menu-icon.png"
            x="(width - object_width) / 2"
            y="(height - object_height) / 2"
            width="object_width" height="object_height"/>

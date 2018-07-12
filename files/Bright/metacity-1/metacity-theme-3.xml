@@ -8,6 +8,17 @@
   <description>Simple theme based on Havoc Pennington's Atlanta</description>
 </info>
 
+<!-- Colour Constants  -->
+<constant name="C_fg_normal" value="gtk:custom(theme_fg_color,gtk:fg[NORMAL])" />
+<constant name="C_bg_normal" value="gtk:custom(theme_bg_color,gtk:bg[NORMAL])" />
+<constant name="C_base_normal" value="gtk:custom(theme_base_color,gtk:base[NORMAL])" />
+
+<constant name="C_bg_light" value="shade/gtk:custom(theme_bg_color,gtk:bg[NORMAL])/1.25" />
+<constant name="C_bg_dark" value="shade/gtk:custom(theme_bg_color,gtk:bg[NORMAL])/0.75" />
+
+<constant name="C_fg_selected" value="gtk:custom(theme_selected_fg_color,gtk:fg[SELECTED])" />
+<constant name="C_bg_selected" value="gtk:custom(theme_selected_bg_color,gtk:bg[SELECTED])" />
+
 <frame_geometry name="normal">
   <distance name="left_width" value="6"/>
   <distance name="right_width" value="6"/>
@@ -68,7 +79,7 @@
 <!-- Buttons -->
 
 <draw_ops name="button_normal_bg">
-<rectangle color="gtk:fg[NORMAL]" filled="false"
+<rectangle color="C_fg_normal" filled="false"
              x="0" y="0" width="width-2" height="height-2"/>
 <line color="#BBBBBB"
         x1="1"
@@ -82,7 +93,7 @@
         x2="width-1"
         y2="height-1"
         width="1"/>
-<rectangle color="gtk:base[NORMAL]" filled="true"
+<rectangle color="C_base_normal" filled="true"
              x="1" y="1" width="width-3" height="height-3"/>
 </draw_ops>
 
@@ -105,7 +116,7 @@
 </draw_ops>
 
 <draw_ops name="minimize_button">
-  <line color="gtk:fg[NORMAL]"
+  <line color="C_fg_normal"
         x1="ButtonIPad"
         y1="height - ButtonIPad - ThickLineWidth + 1"
         x2="width - ButtonIPad-1"
@@ -124,9 +135,9 @@
 </draw_ops>
 
 <draw_ops name="maximize_button">
-  <rectangle color="gtk:fg[NORMAL]" filled="false"
+  <rectangle color="C_fg_normal" filled="false"
              x="ButtonIPad" y="ButtonIPad" width="width-ButtonIPad*2-2" height="height-ButtonIPad*2-2"/>
-  <line color="gtk:fg[NORMAL]" width="2"
+  <line color="C_fg_normal" width="2"
         x1="ButtonIPad" y1="ButtonIPad+1" x2="width-ButtonIPad-1" y2="ButtonIPad+1"/>
 </draw_ops>
 
@@ -141,20 +152,20 @@
 </draw_ops>
 
 <draw_ops name="mini_window_icon">
-  <rectangle color="gtk:fg[NORMAL]" filled="false"
+  <rectangle color="C_fg_normal" filled="false"
              x="0" y="0" width="width-3" height="height-3"/>
-  <rectangle color="gtk:fg[NORMAL]" filled="false"
+  <rectangle color="C_fg_normal" filled="false"
              x="0" y="0" width="width-3" height="height-3"/>
-  <line color="gtk:fg[NORMAL]" width="1"
+  <line color="C_fg_normal" width="1"
         x1="0" y1="1" x2="width-1" y2="1"/>
 </draw_ops>
 
 <draw_ops name="restore_button">
-  <include name="mini_window_icon" 
-           x="ButtonIPad" y="ButtonIPad" 
+  <include name="mini_window_icon"
+           x="ButtonIPad" y="ButtonIPad"
            width="width - 5 - ButtonIPad"
            height="height - 5 - ButtonIPad"/>
-  <include name="mini_window_icon" 
+  <include name="mini_window_icon"
            x="3 + ButtonIPad" y="3 + ButtonIPad"
            width="width - 5 - ButtonIPad"
            height="height - 5 - ButtonIPad"/>
@@ -171,16 +182,16 @@
 </draw_ops>
 
 <draw_ops name="close_button">
-  <line color="gtk:fg[NORMAL]"
+  <line color="C_fg_normal"
         x1="ButtonIPad" y1="ButtonIPad"
         x2="width - ButtonIPad - 2" y2="height - ButtonIPad - 2"/>
-  <line color="gtk:fg[NORMAL]"
+  <line color="C_fg_normal"
         x1="ButtonIPad" y1="height - ButtonIPad - 2"
         x2="width - ButtonIPad - 2" y2="ButtonIPad"/>
 </draw_ops>
 
 <draw_ops name="shade_button">
-  <line color="gtk:fg[NORMAL]"
+  <line color="C_fg_normal"
         x1="ButtonIPad"
         y1="ButtonIPad"
         x2="width - ButtonIPad-1"
@@ -189,13 +200,13 @@
 </draw_ops>
 
 <draw_ops name="unshade_button">
-  <line color="gtk:fg[NORMAL]"
+  <line color="C_fg_normal"
         x1="ButtonIPad"
         y1="ButtonIPad"
         x2="width - ButtonIPad-1"
         y2="ButtonIPad"
         width="ThickLineWidth"/>
-  <rectangle color="gtk:fg[NORMAL]" filled="false"
+  <rectangle color="C_fg_normal" filled="false"
         x="ButtonIPad"
         y="ButtonIPad*2"
         width="width - ButtonIPad*2-1"
@@ -203,25 +214,25 @@
 </draw_ops>
 
 <draw_ops name="above_button">
-  <line color="gtk:fg[NORMAL]"
+  <line color="C_fg_normal"
         x1="ButtonIPad"
         y1="height/2"
         x2="ButtonIPad + 2"
         y2="height/2"
         width="ThickLineWidth"/>
-  <line color="gtk:fg[NORMAL]"
+  <line color="C_fg_normal"
         x1="width - ButtonIPad-1"
         y1="height/2"
         x2="width - ButtonIPad-3"
         y2="height/2"
         width="ThickLineWidth"/>
-  <line color="gtk:fg[NORMAL]"
+  <line color="C_fg_normal"
         x1="width/2-1"
         y1="height - ButtonIPad - 2"
         x2="width/2+1"
         y2="height - ButtonIPad - 2"
         width="ThickLineWidth"/>
-  <line color="gtk:fg[NORMAL]"
+  <line color="C_fg_normal"
         x1="ButtonIPad"
         y1="ButtonIPad"
         x2="width - ButtonIPad-1"
@@ -230,25 +241,25 @@
 </draw_ops>
 
 <draw_ops name="unabove_button">
-  <line color="gtk:fg[NORMAL]"
+  <line color="C_fg_normal"
         x1="ButtonIPad"
         y1="height/2"
         x2="ButtonIPad + 2"
         y2="height/2"
         width="ThickLineWidth"/>
-  <line color="gtk:fg[NORMAL]"
+  <line color="C_fg_normal"
         x1="width - ButtonIPad-1"
         y1="height/2"
         x2="width - ButtonIPad-3"
         y2="height/2"
         width="ThickLineWidth"/>
-  <line color="gtk:fg[NORMAL]"
+  <line color="C_fg_normal"
         x1="width/2-1"
         y1="height - ButtonIPad - 2"
         x2="width/2+1"
         y2="height - ButtonIPad - 2"
         width="ThickLineWidth"/>
-  <line color="gtk:fg[NORMAL]"
+  <line color="C_fg_normal"
         x1="width/2-1"
         y1="ButtonIPad"
         x2="width/2+1"
@@ -257,22 +268,22 @@
 </draw_ops>
 
 <draw_ops name="stick_button">
-  <line color="gtk:fg[NORMAL]"
+  <line color="C_fg_normal"
         x1="ButtonIPad" y1="ButtonIPad"
         x2="ButtonIPad" y2="height - ButtonIPad - 2"/>
-  <line color="gtk:fg[NORMAL]"
+  <line color="C_fg_normal"
         x1="ButtonIPad" y1="height/2-1"
         x2="width - ButtonIPad - 2" y2="height/2-1"/>
 </draw_ops>
 
 <draw_ops name="unstick_button">
-  <line color="gtk:fg[NORMAL]"
+  <line color="C_fg_normal"
         x1="width/2" y1="ButtonIPad"
         x2="width/2" y2="height - ButtonIPad - 2"/>
-  <line color="gtk:fg[NORMAL]"
+  <line color="C_fg_normal"
         x1="width/2" y1="height/2-1"
         x2="width - ButtonIPad - 2" y2="height/2-1"/>
-  <line color="gtk:fg[NORMAL]"
+  <line color="C_fg_normal"
         x1="width-ButtonIPad-2" y1="height/2-3"
         x2="width-ButtonIPad-2" y2="height/2+2"/>
 </draw_ops>
@@ -348,18 +359,18 @@
 </draw_ops>
 
 <draw_ops name="outer_bevel">
-  <rectangle color="gtk:bg[NORMAL]"
+  <rectangle color="C_bg_normal"
             x="1" y="1" width="width-2" height="height-2" filled="true"/>
-  <rectangle color="gtk:fg[NORMAL]"
+  <rectangle color="C_fg_normal"
              x="0" y="0" width="width-1" height="height-1"/>
-  <line color="gtk:light[NORMAL]"
+  <line color="C_bg_light"
         x1="1" y1="1" x2="1" y2="height-2"/>
-  <line color="gtk:light[NORMAL]"
+  <line color="C_bg_light"
         x1="1" y1="1" x2="width-2" y2="1"/>
-  <line color="gtk:dark[NORMAL]"
+  <line color="C_bg_dark"
         x1="width-2" y1="1" x2="width-2" y2="height-2"/>
-  <line color="gtk:dark[NORMAL]"
-        x1="1" y1="height-2" x2="width-2" y2="height-2"/>        
+  <line color="C_bg_dark"
+        x1="1" y1="height-2" x2="width-2" y2="height-2"/>
 </draw_ops>
 
 <draw_ops name="blank">
@@ -367,14 +378,14 @@
 </draw_ops>
 
 <draw_ops name="focus_outline">
-  <rectangle color="gtk:fg[NORMAL]"
+  <rectangle color="C_fg_normal"
              x="left_width-1" y="top_height-1"
              width="width-left_width-right_width+1"
              height="height-top_height-bottom_height+1"/>
 </draw_ops>
 
 <draw_ops name="maximised_fill">
-  <rectangle color="gtk:bg[NORMAL]"
+  <rectangle color="C_bg_normal"
               x="0" y="0"
              width="width"
              height="height"
@@ -393,7 +404,7 @@
 </draw_ops>
 
 <draw_ops name="title_box">
-<rectangle color="gtk:fg[NORMAL]" filled="false"
+<rectangle color="C_fg_normal" filled="false"
              x="0" y="1" width="width-SpacerWidth+3" height="height-2"/>
 <line color="#BBBBBB"
         x1="2"
@@ -407,8 +418,8 @@
         x2="width-SpacerWidth+2"
         y2="height-2"
         width="1"/>
-<rectangle color="gtk:bg[SELECTED]" filled="true"
-	     x="1" y="2" width="width-5" height="height-3"/>
+<rectangle color="C_bg_selected" filled="true"
+       x="1" y="2" width="width-5" height="height-3"/>
 </draw_ops>
 
 <draw_ops name="title_spacer">
@@ -419,14 +430,14 @@
 
 <draw_ops name="title_text_focused_no_icon">
   <clip x="3" y="2" width="width-SpacerWidth-2" height="height-4"/>
-  <title color="gtk:fg[SELECTED]"
+  <title color="C_fg_selected"
          x="(3 `max` (width-title_width)) / 2+2"
          y="((height - title_height) / 2) `max` 0"/>
 </draw_ops>
 
 <draw_ops name="title_text_no_icon">
   <clip x="3" y="2" width="width-SpacerWidth-2" height="height-4"/>
-  <title color="gtk:fg[NORMAL]"
+  <title color="C_fg_normal"
          x="(3 `max` (width-title_width)) / 2+2"
          y="((height - title_height) / 2) `max` 0"/>
 </draw_ops>
