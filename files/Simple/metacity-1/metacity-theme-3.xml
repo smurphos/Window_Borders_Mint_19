@@ -9,7 +9,7 @@
 </info>
 
 <!-- Colour Constants  -->
-<constant name="C_fg_normal" value="gtk:custom(theme_fg_color,gtk:bg[NORMAL])" />
+<constant name="C_fg_normal" value="gtk:custom(theme_fg_color,gtk:fg[NORMAL])" />
 <constant name="C_bg_normal" value="gtk:custom(theme_bg_color,gtk:bg[NORMAL])" />
 
 <constant name="C_fg_selected" value="gtk:custom(theme_selected_fg_color,gtk:fg[SELECTED])" />
