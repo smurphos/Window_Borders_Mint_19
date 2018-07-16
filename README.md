@@ -14,7 +14,7 @@ Please be aware my testing of these modified themes has been fairly limited. Fee
 
 Open a terminal (ctrl t) and enter the following commands
 
-* `wget https://github.com/smurphos/Window_Borders_Mint_19/releases/download/v.0.3/metacity_for_mint19_cinn.zip`
+* `wget https://github.com/smurphos/Window_Borders_Mint_19/releases/download/v.0.4/metacity_for_mint19_cinn.zip`
 
 * `unzip metacity_for_mint19_cinn.zip -d ~/.themes`
 
@@ -22,11 +22,30 @@ Open a terminal (ctrl t) and enter the following commands
 
 Open the Themes app and the new Window Border's themes should be available for selection.
 
+## Included Themes
+
+![alt text](https://i.imgur.com/OEhyGNl.png "Adwaita")
+![alt text](https://i.imgur.com/SkYRx6F.png "Aging-Gorilla")
+![alt text](https://i.imgur.com/Xaj50Ew.png "Atlanta")
+![alt text](https://i.imgur.com/b5hiWmn.png "Bright")
+![alt text](https://i.imgur.com/uTopYyX.png "Crux")
+![alt text](https://i.imgur.com/GR5C9DC.png "Esco"")
+![alt text](https://i.imgur.com/iUR6eTN.png "High_Contrast")
+![alt text](https://i.imgur.com/mxqcBqd.png "Metabox")
+![alt text](https://i.imgur.com/5iE1ns6.png "Simple")
+
+## Bonus Themes
+
+![alt text](https://i.imgur.com/CAn8Eto.png "Mint-Y-BB")
+![alt text](https://i.imgur.com/g9QFu0i.png "Mint-Y-Dark-BB")
+
 
 ## Changelog
 
-5/7/18 - v.1 - Initial port of version 1 and 2 themes to version 3 - release
+5/7/18 - v.0.1 - Initial port of version 1 and 2 themes to version 3 - release
 
-6/7/18 - v.2 - Fixed version 1 and 2 themes to support Mate
+6/7/18 - v.0.2 - Fixed version 1 and 2 themes to support Mate
 
-12/7/18 -v.3 - Removed all version 1 and 2 themes. Improvements to version 3 themes to improve compatibility for displaying colours from active GTK3.22 theme.
+12/7/18 -v.0.3 - Removed all version 1 and 2 themes. Improvements to version 3 themes to improve compatibility for displaying colours from active GTK3.22 theme.
+
+16/7/18 - v.0.4 - Added bonus themes Mint-Y-BB and Mint=Y-Dark-BB. BB stands for Big-Buttoned...
