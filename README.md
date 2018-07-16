@@ -29,7 +29,7 @@ Open the Themes app and the new Window Border's themes should be available for s
 ![alt text](https://i.imgur.com/Xaj50Ew.png "Atlanta")
 ![alt text](https://i.imgur.com/b5hiWmn.png "Bright")
 ![alt text](https://i.imgur.com/uTopYyX.png "Crux")
-![alt text](https://i.imgur.com/GR5C9DC.png "Esco"")
+![alt text](https://i.imgur.com/GR5C9DC.png "Esco")
 ![alt text](https://i.imgur.com/iUR6eTN.png "High_Contrast")
 ![alt text](https://i.imgur.com/mxqcBqd.png "Metabox")
 ![alt text](https://i.imgur.com/5iE1ns6.png "Simple")
