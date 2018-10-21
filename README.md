@@ -14,7 +14,7 @@ Please be aware my testing of these modified themes has been fairly limited. Fee
 
 Open a terminal (ctrl t) and enter the following commands
 
-* `wget https://github.com/smurphos/Window_Borders_Mint_19/releases/download/v.0.4/metacity_for_mint19_cinn.zip`
+* `wget https://github.com/smurphos/Window_Borders_Mint_19/releases/download/v.0.5/metacity_for_mint19_cinn.zip`
 
 * `unzip metacity_for_mint19_cinn.zip -d ~/.themes`
 
@@ -38,7 +38,7 @@ Open the Themes app and the new Window Border's themes should be available for s
 
 ![alt text](https://i.imgur.com/CAn8Eto.png "Mint-Y-BB")
 ![alt text](https://i.imgur.com/g9QFu0i.png "Mint-Y-Dark-BB")
-
+![alt text](https://i.imgur.com/vY92f6o.png "Crux-with-icons")
 
 ## Changelog
 
@@ -49,3 +49,5 @@ Open the Themes app and the new Window Border's themes should be available for s
 12/7/18 -v.0.3 - Removed all version 1 and 2 themes. Improvements to version 3 themes to improve compatibility for displaying colours from active GTK3.22 theme.
 
 16/7/18 - v.0.4 - Added bonus themes Mint-Y-BB and Mint=Y-Dark-BB. BB stands for Big-Buttoned...
+
+21/10/18 - v.0.5 - Added Crux-with-icons. Added thumbnail.png to all thems in case the thumbnails aren't pre-installed.
