@@ -38,7 +38,7 @@ Open the Themes app and the new Window Border's themes should be available for s
 
 ![alt text](https://i.imgur.com/CAn8Eto.png "Mint-Y-BB")
 ![alt text](https://i.imgur.com/g9QFu0i.png "Mint-Y-Dark-BB")
-![alt text](https://i.imgur.com/vY92f6o.png "Crux-with-icons")
+![alt text](https://i.imgur.com/T8UaVln.png "Crux-with-icons")
 
 ## Changelog
 
@@ -50,4 +50,4 @@ Open the Themes app and the new Window Border's themes should be available for s
 
 16/7/18 - v.0.4 - Added bonus themes Mint-Y-BB and Mint=Y-Dark-BB. BB stands for Big-Buttoned...
 
-21/10/18 - v.0.5 - Added Crux-with-icons. Added thumbnail.png to all thems in case the thumbnails aren't pre-installed.
+21/10/18 - v.0.5 - Added Crux-with-icons. Added thumbnail.png to all themes in case the thumbnails aren't pre-installed.
