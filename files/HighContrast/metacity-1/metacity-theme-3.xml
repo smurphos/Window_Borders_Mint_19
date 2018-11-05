@@ -905,11 +905,11 @@
 </draw_ops>
 
 <draw_ops name="button_inner_right_fill_prelight">
-	<tint color="gtk:custom(wm_button_prelight_bg,gtk:fg[NORMAL])" alpha="1" x="2" y="0" width="width-2" height="height-3" />
+	<tint color="gtk:custom(wm_button_prelight_bg,#000000)" alpha="1" x="2" y="0" width="width-2" height="height-3" />
 </draw_ops>
 
 <draw_ops name="button_inner_right_fill_pressed">
-	<tint color="gtk:custom(wm_button_pressed_bg,gtk:text[NORMAL])" alpha="1" x="2" y="0" width="width-2" height="height-3" />
+	<include name="button_inner_right_fill_prelight" />
 </draw_ops>
 
 <draw_ops name="button_inner_right_border">
@@ -944,11 +944,11 @@
 </draw_ops>
 
 <draw_ops name="button_inner_left_fill_prelight">
-	<tint color="gtk:custom(wm_button_prelight_bg,gtk:fg[NORMAL])" alpha="1" x="1" y="0" width="width-2" height="height-3" />
+	<tint color="gtk:custom(wm_button_prelight_bg,#000000)" alpha="1" x="1" y="0" width="width-2" height="height-3" />
 </draw_ops>
 
 <draw_ops name="button_inner_left_fill_pressed">
-	<tint color="gtk:custom(wm_button_pressed_bg,gtk:text[NORMAL])" alpha="1" x="1" y="0" width="width-2" height="height-3" />
+	<include name="button_inner_left_fill_prelight" />
 </draw_ops>
 
 <draw_ops name="button_inner_left_border">
