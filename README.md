@@ -14,7 +14,7 @@ Please be aware my testing of these modified themes has been fairly limited. Fee
 
 Open a terminal (ctrl t) and enter the following commands
 
-* `wget https://github.com/smurphos/Window_Borders_Mint_19/releases/download/v.0.6/metacity_for_mint19_cinn.zip`
+* `wget https://github.com/smurphos/Window_Borders_Mint_19/releases/download/v.0.7/metacity_for_mint19_cinn.zip`
 
 * `unzip -o metacity_for_mint19_cinn.zip -d ~/.themes`
 
@@ -53,3 +53,5 @@ Open the Themes app and the new Window Border's themes should be available for s
 21/10/18 - v.0.5 - Added Crux-with-icons. Added thumbnail.png to all themes in case the thumbnails aren't pre-installed.
 
 5/11/18 - v.0.6 - Fixed HighContrast inner button prelight and pressed background color.
+
+8/2/19 - v.0.7 - HighContrast - show buttons on regular dialogs
