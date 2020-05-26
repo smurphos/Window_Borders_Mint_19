@@ -10,7 +10,7 @@
 
 <!-- meaningfull constants -->
 
-<constant name="C_title_focused" value="rgba(120,120,120,1.0)" />
+<constant name="C_title_focused" value="rgba(64,64,64,1.0)" />
 <constant name="C_title_unfocused" value="rgba(157,157,157,1.0)" />
 
 <constant name="C_wm_bg_focused" value="rgba(217,217,217,1.0)" />
@@ -23,21 +23,21 @@
 <!-- window button colors -->
 
 <!-- close -->
-<constant name="C_button_close_bg_focused" value="gtk:custom(selected_bg_color,#9ab87c)" />
-<constant name="C_button_close_bg_hover" value="shade/gtk:custom(selected_bg_color,#9ab87c)/1.14" />
-<constant name="C_button_close_bg_active" value="shade/gtk:custom(selected_bg_color,#9ab87c)/0.8" />
+<constant name="C_button_close_bg_focused" value="gtk:custom(selected_bg_color,#92b372)" />
+<constant name="C_button_close_bg_hover" value="shade/gtk:custom(selected_bg_color,#92b372)/1.14" />
+<constant name="C_button_close_bg_active" value="shade/gtk:custom(selected_bg_color,#92b372)/0.8" />
 
 <constant name="C_icon_close_bg" value="#F8F8F8" />
 
 <!-- minimize, maximize -->
-<constant name="C_button_bg_hover" value="#fdfdfd" />
+<constant name="C_button_bg_hover" value="#ffffff" />
 <constant name="C_button_bg_active" value="#909090" />
 
 <constant name="C_button_border_hover" value="#D1D1D1" />
 
-<constant name="C_icon_bg_focused" value="#909090" />
+<constant name="C_icon_bg_focused" value="#404040" />
 <constant name="C_icon_bg_unfocused" value="#B6B6B6" />
-<constant name="C_icon_bg_hover" value="#7A7A7A" />
+<constant name="C_icon_bg_hover" value="#404040" />
 <constant name="C_icon_bg_active" value="#ffffff" />
 
 <!-- geometries -->
@@ -51,7 +51,7 @@
 	<distance name="title_vertical_pad" value="3"/>
 	<border name="title_border" left="10" right="10" top="3" bottom="3"/>
 	<border name="button_border" left="0" right="0" top="0" bottom="0"/>
-  <distance name="button_width" value="30"/>
+  <distance name="button_width" value="32"/>
   <distance name="button_height" value="24"/>
 </frame_geometry>
 
@@ -112,12 +112,8 @@
 	<distance name="title_vertical_pad" value="5"/>
 </frame_geometry>
 
-<!--chromium save dialog-->
-<frame_geometry name="attached" title_scale="small" has_title="false"  hide_buttons="true" rounded_top_left="1" rounded_top_right="1" rounded_bottom_left="0" rounded_bottom_right="0" parent="normal">
-	<distance name="title_vertical_pad" value="0"/>
-	<distance name="bottom_height" value="1"/>
-	<distance name="left_width" value="1"/>
-	<distance name="right_width" value="1"/>
+<frame_geometry name="attached" title_scale="small" hide_buttons="true" rounded_top_left="1" rounded_top_right="1" parent="small">
+	<distance name="title_vertical_pad" value="5"/>
 </frame_geometry>
 
 <!-- drawing operations -->
@@ -941,6 +937,7 @@
 <frame_style name="attached_focused" geometry="attached">
 	<piece position="entire_background" draw_ops="entire_background_focused" />
 	<piece position="titlebar" draw_ops="titlebar_focused" />
+	<piece position="title" draw_ops="title_focused" />
 	<button function="close" state="normal"><draw_ops></draw_ops></button>
 	<button function="close" state="pressed"><draw_ops></draw_ops></button>
 	<button function="maximize" state="normal"><draw_ops></draw_ops></button>
@@ -966,6 +963,7 @@
 <frame_style name="attached_unfocused" geometry="attached">
 	<piece position="entire_background" draw_ops="entire_background_unfocused" />
 	<piece position="titlebar" draw_ops="titlebar_unfocused" />
+	<piece position="title" draw_ops="title_unfocused" />
 	<button function="close" state="normal"><draw_ops></draw_ops></button>
 	<button function="close" state="pressed"><draw_ops></draw_ops></button>
 	<button function="maximize" state="normal"><draw_ops></draw_ops></button>
