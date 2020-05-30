@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Simple
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Simple
+GtkTheme=Adwaita
+IconTheme=Adwaita
+MetacityTheme=Simple

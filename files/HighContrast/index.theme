@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=HighContrast
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=HighContrast
+GtkTheme=Adwaita
+IconTheme=Adwaita
+MetacityTheme=HighContrast

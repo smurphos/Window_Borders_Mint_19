@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Crux
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Crux
+GtkTheme=Adwaita
+IconTheme=Adwaita
+MetacityTheme=Crux

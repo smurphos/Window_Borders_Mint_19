@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Mint-Y-VBB
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Mint-Y-VBB
+GtkTheme=Adwaita
+IconTheme=Adwaita
+MetacityTheme=Mint-Y-VBB

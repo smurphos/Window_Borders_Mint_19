@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Atlanta
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Atlanta
+GtkTheme=Adwaita
+IconTheme=Adwaita
+MetacityTheme=Atlanta

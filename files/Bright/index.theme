@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Bright
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Bright
+GtkTheme=Adwaita
+IconTheme=Adwaita
+MetacityTheme=Bright

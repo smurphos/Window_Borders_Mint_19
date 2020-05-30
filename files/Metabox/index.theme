@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Metabox
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Metabox
+GtkTheme=Adwaita
+IconTheme=Adwaita
+MetacityTheme=Metabox

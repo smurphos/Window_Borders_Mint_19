@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Adwaita
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Adwaita
+GtkTheme=Adwaita
+IconTheme=Adwaita
+MetacityTheme=Adwaita
