@@ -33,24 +33,24 @@ Open the Themes app and the new Window Border's themes should be available for s
 
 ## Included Themes
 
-![alt text](https://i.imgur.com/OEhyGNl.png "Adwaita")
-![alt text](https://i.imgur.com/SkYRx6F.png "Aging-Gorilla")
-![alt text](https://i.imgur.com/Xaj50Ew.png "Atlanta")
-![alt text](https://i.imgur.com/b5hiWmn.png "Bright")
-![alt text](https://i.imgur.com/uTopYyX.png "Crux")
-![alt text](https://i.imgur.com/GR5C9DC.png "Esco")
-![alt text](https://i.imgur.com/iUR6eTN.png "High_Contrast")
-![alt text](https://i.imgur.com/mxqcBqd.png "Metabox")
-![alt text](https://i.imgur.com/5iE1ns6.png "Simple")
+![alt text](https://github.com/smurphos/Window_Borders_Mint_19/blob/master/screenshots/Adwaita.png "Adwaita")
+![alt text](https://github.com/smurphos/Window_Borders_Mint_19/blob/master/screenshots/AgingGorilla.png "AgingGorilla")
+![alt text](https://github.com/smurphos/Window_Borders_Mint_19/blob/master/screenshots/Atlanta.png "Atlanta")
+![alt text](https://github.com/smurphos/Window_Borders_Mint_19/blob/master/screenshots/Bright.png "Bright")
+![alt text](https://github.com/smurphos/Window_Borders_Mint_19/blob/master/screenshots/Crux.png "Crux")
+![alt text](https://github.com/smurphos/Window_Borders_Mint_19/blob/master/screenshots/Esco.png "Esco")
+![alt text](https://github.com/smurphos/Window_Borders_Mint_19/blob/master/screenshots/High-Contrast.png "High-Contrast")
+![alt text](https://github.com/smurphos/Window_Borders_Mint_19/blob/master/screenshots/Metabox.png "Metabox")
+![alt text](https://github.com/smurphos/Window_Borders_Mint_19/blob/master/screenshots/Simple.png "Simple")
 
 ## Bonus Themes
 
-![alt text](https://i.imgur.com/CAn8Eto.png "Mint-Y-BB")
-![alt text](https://i.imgur.com/6qqnw6M.png "Mint-Y-VBB")
-![alt text](https://i.imgur.com/g9QFu0i.png "Mint-Y-Dark-BB")
-![alt text](https://i.imgur.com/SjDQf15.png "Mint-Y-Dark-VBB")
-![alt text](https://i.imgur.com/URrTHIS.png "Cinnamox-Colours")
-![alt text](https://i.imgur.com/oUecwQe.png "Crux-Left")
+![alt text](https://github.com/smurphos/Window_Borders_Mint_19/blob/master/screenshots/Mint-Y-BB.png "Mint-Y-BB")
+![alt text](https://github.com/smurphos/Window_Borders_Mint_19/blob/master/screenshots/Mint-Y-VBB.png "Mint-Y-VBB")
+![alt text](https://github.com/smurphos/Window_Borders_Mint_19/blob/master/screenshots/Mint-Y-Dark-BB.png "Mint-Y-Dark-BB")
+![alt text](https://github.com/smurphos/Window_Borders_Mint_19/blob/master/screenshots/Mint-Y-Dark-VBB.png "Mint-Y-Dark-VBB")
+![alt text](https://github.com/smurphos/Window_Borders_Mint_19/blob/master/screenshots/Cinnamox-Colours.png "Cinnamox-Colours")
+![alt text](https://github.com/smurphos/Window_Borders_Mint_19/blob/master/screenshots/Crux-Left.png "Crux-Left")
 
 
 ## Changelog
