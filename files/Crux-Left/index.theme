@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Crux-Left
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Crux-Left
+GtkTheme=Adwaita
+IconTheme=Adwaita
+MetacityTheme=Crux-Left
