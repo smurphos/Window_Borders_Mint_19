@@ -1,5 +1,7 @@
 # Window Borders Mint19
-Additional Metacity Themes from Mint 18.3 Cinnamon Edition tweaked to work in Mint 19 / Cinnamon 3.8.x
+Additional Metacity Themes from Mint 18.3 Cinnamon Edition tweaked to work in Mint 19 / Cinnamon 3.8.x through to Mint 20.x /  Cinnamon 5.2.x
+
+Note that Cinnamon 5.4.x and later has no support for metacity themes. This repo has thus been archived.
 
 ## Introduction
 
